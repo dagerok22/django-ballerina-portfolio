@@ -1,0 +1,45 @@
+.first_section_jumbotron{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    padding: 200px 0 200px 0;
+    background: transparent;
+    color: #fff
+}
+
+.first_section_jumbotron>p{
+    font-family: 'Raleway', sans-serif;
+}
+.first_section{
+}
+
+p.navbar-text{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1.3em;
+    color: #fff;
+    margin: 20px 30px 20px 30px;
+    border-bottom: 3px solid transparent;
+    transition: all .2s ease
+}
+
+p.navbar-text:hover{
+    border-bottom: 3px solid #fff;
+    background: transparent;
+    cursor: pointer;
+}
+p.navbar-text.active{
+    border-bottom: 3px solid #fff;
+}
+
+.second_section{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: #333;
+    background: #fff;
+    padding: 30px 0 30px;
+}
+.second_section p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1.3em;
+}

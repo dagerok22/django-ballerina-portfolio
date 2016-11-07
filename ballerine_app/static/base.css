@@ -1,0 +1,14 @@
+a{
+    color: #fff;
+}
+a:hover{
+    color: #fff;
+    background: transparent;
+    outline-style: none;
+    text-decoration: none;
+}
+.wrapper{
+    background: url("img/first_section.gif");
+    background-size: auto 1200px;
+    background-position: center top;
+}

@@ -1,0 +1,63 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block head_title %}{% endblock %}</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'base.css' %}">
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+
+
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+
+{% block header %}
+    <div class="header clearfix">
+        <nav class="navbar">
+            <div class="container">
+{#                <ul class="nav navbar-nav pull-right">#}
+{#                    <li class="nav-item active">#}
+{#                        <a class="nav-linke" href="#">Home <span class="sr-only">(current)</span></a>#}
+{#                    </li>#}
+{#                    <li class="nav-item">#}
+{#                        <a class="nav-link" href="#">About me</a>#}
+{#                    </li>#}
+{#                    <li class="nav-item">#}
+{#                        <a class="nav-link" href="#">Contact</a>#}
+{#                    </li>#}
+{#                </ul>#}
+                <div class="col-sm-5 pull-right">
+                    <p class="navbar-text"><a href="">Home</a></p>
+                    <p class="navbar-text"><a href="{% url 'portfolio:gallery' %}">Gallery</a></p>
+                    <p class="navbar-text"><a href="{% url 'portfolio:contact' %}">Contact</a></p>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+{% endblock %}
+    </div>
+    <div class="container_custom">
+        {% block content %}{% endblock %}
+    </div>
+    <div class="footer">
+        {% block footer %}{% endblock %}
+    </div>
+</div>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

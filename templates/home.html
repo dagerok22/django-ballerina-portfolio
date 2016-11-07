@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block head_title %}
+    {{ title }}
+{% endblock %}
+
+
+{% block content %}
+    <div class="first_section">
+        <div class="container">
+            <div class="col-sm-10 col-sm-offset-1">
+                <div class="jumbotron first_section_jumbotron">
+                    <h1>Hi, my name is Antropova Anastasia.</h1>
+                    <p class="lead">Here is my portfolio.</p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="second_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2>Education</h2>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dolor, doloremque doloribus earum eos esse eum, ex explicabo facere illum ipsum iste laboriosam maiores necessitatibus obcaecati optio provident quia recusandae repellendus reprehenderit repudiandae tempore velit voluptatum. A accusamus architecto aut dignissimos error exercitationem inventore ipsam itaque, iusto minima, nam non odio perspiciatis placeat quam soluta sunt suscipit tempora unde voluptates. Accusamus aliquid aperiam architecto culpa cum cupiditate dicta eaque eligendi eos fuga, id illo laboriosam maxime minus modi molestias neque non odit quam, quas qui sed sit soluta sunt tenetur ullam ut. Dolores doloribus magni molestiae praesentium quos unde vel!</p>
+                </div>
+                <div class="col-sm-6 second_section_img">
+                    <img src="{% static 'img/second_section.jpg' %}" alt="" class="img-responsive img-thumbnail">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block footer %}
+Footer
+{% endblock %}

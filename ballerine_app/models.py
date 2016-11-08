@@ -14,6 +14,12 @@ class StaticText(models.Model):
     def __str__(self):
         return self.title
 
+class HomeImage(models.Model):
+    title = models.CharField(max_length=120)
+    img = models.FileField(null=True, blank=True)
+
+    def __str__(self):
+        return self.title
 
 
 

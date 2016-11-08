@@ -8,14 +8,15 @@
 
 
 {% block content %}
-    <div class="first_section">
+    <div class="first_section" style="background: url({{ first_section_bg.img.url }}); background-size: cover;background-position: center;">
         <div class="container">
             <div class="col-sm-10 col-sm-offset-1">
                 <div class="jumbotron first_section_jumbotron">
-                    <h1>Hi, my name is Antropova Anastasia.</h1>
-                    <p class="lead">Here is my portfolio.</p>
+                    <h1>{{ first_section_h1.content }}</h1>
+                    <p class="lead">{{ first_section_p.content }}</p>
                     <p></p>
                 </div>
+                <div class="row"><img src="{% static 'img/mouse-with-wheel.gif' %}" alt="" class="mouse-wheel"></div>
             </div>
         </div>
     </div>
@@ -24,12 +25,29 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    <h2>Education</h2>
+                    <h2>{{ second_section_h2.content }}</h2>
                     <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dolor, doloremque doloribus earum eos esse eum, ex explicabo facere illum ipsum iste laboriosam maiores necessitatibus obcaecati optio provident quia recusandae repellendus reprehenderit repudiandae tempore velit voluptatum. A accusamus architecto aut dignissimos error exercitationem inventore ipsam itaque, iusto minima, nam non odio perspiciatis placeat quam soluta sunt suscipit tempora unde voluptates. Accusamus aliquid aperiam architecto culpa cum cupiditate dicta eaque eligendi eos fuga, id illo laboriosam maxime minus modi molestias neque non odit quam, quas qui sed sit soluta sunt tenetur ullam ut. Dolores doloribus magni molestiae praesentium quos unde vel!</p>
+                    <p>{{ second_section_p.content }}</p>
                 </div>
                 <div class="col-sm-6 second_section_img">
-                    <img src="{% static 'img/second_section.jpg' %}" alt="" class="img-responsive img-thumbnail">
+                    <img src="{{ second_section_image.img.url }}" alt="" class="img-responsive img-thumbnail">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="third_section">
+        <div class="container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 second_section_img">
+                        <img src="{{ third_section_image.img.url }}" alt="" class="img-responsive img-thumbnail">
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>{{ third_section_h2.content }}</h2>
+                        <hr>
+                        <p>{{ third_section_p.content }}</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -38,5 +56,6 @@
 
 
 {% block footer %}
-Footer
+Footer <br><br><br><br><br><br><br><br><br><br>
 {% endblock %}
+

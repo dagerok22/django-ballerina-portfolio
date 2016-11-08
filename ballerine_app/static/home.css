@@ -1,7 +1,7 @@
 .first_section_jumbotron{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    padding: 200px 0 200px 0;
+    padding: 200px 0 160px 0;
     background: transparent;
     color: #fff
 }
@@ -9,9 +9,6 @@
 .first_section_jumbotron>p{
     font-family: 'Raleway', sans-serif;
 }
-.first_section{
-}
-
 p.navbar-text{
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
@@ -31,15 +28,38 @@ p.navbar-text.active{
     border-bottom: 3px solid #fff;
 }
 
-.second_section{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
-    color: #333;
-    background: #fff;
-    padding: 30px 0 30px;
+.third_section{
+    background: #f8f8f8;
+    border-bottom: 2px solid #e1e1e1;
+    border-top: 2px solid #e1e1e1;
 }
-.second_section p{
+
+/*.second_section{*/
+    /*-webkit-box-shadow: inset 0px 0px 24px -9px rgba(0,0,0,1);*/
+/*-moz-box-shadow: inset 0px 0px 24px -9px rgba(0,0,0,1);*/
+/*box-shadow: inset 0px 0px 24px -9px rgba(0,0,0,1);*/
+/*}*/
+
+.second_section, .third_section{
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #333;
+    padding: 90px 0 90px;
+}
+.second_section p, .third_section p{
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 1.3em;
+}
+
+.mouse-wheel{
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 30px;
+    display: block;
+}
+
+.mouse-wheel:hover{
+    cursor: pointer;
 }

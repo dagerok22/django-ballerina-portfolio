@@ -22,11 +22,10 @@
 </head>
 <body>
 <div class="wrapper">
-    <div class="header">
 
 {% block header %}
-    <div class="header clearfix">
-        <nav class="navbar">
+    <div class="clearfix">
+        <div class="head">
             <div class="container">
 {#                <ul class="nav navbar-nav pull-right">#}
 {#                    <li class="nav-item active">#}
@@ -39,25 +38,23 @@
 {#                        <a class="nav-link" href="#">Contact</a>#}
 {#                    </li>#}
 {#                </ul>#}
-                <div class="col-sm-5 pull-right">
+                <div class="pull-right">
                     <p class="navbar-text"><a href="">Home</a></p>
                     <p class="navbar-text"><a href="{% url 'portfolio:gallery' %}">Gallery</a></p>
                     <p class="navbar-text"><a href="{% url 'portfolio:contact' %}">Contact</a></p>
                 </div>
             </div>
-        </nav>
+        </div>
     </div>
 
 
 {% endblock %}
-    </div>
-    <div class="container_custom">
+
         {% block content %}{% endblock %}
-    </div>
-    <div class="footer">
         {% block footer %}{% endblock %}
-    </div>
 </div>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="{% static 'js/common.js' %}"></script>
+<script src="{% static 'js/experemental.js' %}"></script>
 </body>
 </html>

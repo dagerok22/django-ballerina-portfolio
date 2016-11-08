@@ -51,7 +51,32 @@
 {% endblock %}
 
         {% block content %}{% endblock %}
-        {% block footer %}{% endblock %}
+
+
+{% block footer %}
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="btn"><a href="{% url 'portfolio:home' %}">Home</a></div>
+                    <div class="btn"><a href="{% url 'portfolio:gallery' %}">Gallery</a></div>
+                    <div class="btn"><a href="{% url 'portfolio:contact' %}">Contact</a></div>
+                </div>
+            </div>
+            <div class="row">
+                <hr>
+                <div class="col-sm-6">
+                    <p>
+                        <small>
+                            {% block footer_copyright %}
+                            {% endblock %}
+                        </small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
 </div>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="{% static 'js/common.js' %}"></script>

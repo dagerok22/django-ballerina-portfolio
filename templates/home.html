@@ -38,24 +38,69 @@
 
     <div class="third_section">
         <div class="container">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 second_section_img">
-                        <img src="{{ third_section_image.img.url }}" alt="" class="img-responsive img-thumbnail">
-                    </div>
-                    <div class="col-sm-6">
-                        <h2>{{ third_section_h2.content }}</h2>
-                        <hr>
-                        <p>{{ third_section_p.content }}</p>
-                    </div>
+            <div class="row">
+                <div class="col-sm-6 second_section_img">
+                    <img src="{{ third_section_image.img.url }}" alt="" class="img-responsive img-thumbnail">
+                </div>
+                <div class="col-sm-6">
+                    <h2>{{ third_section_h2.content }}</h2>
+                    <hr>
+                    <p>{{ third_section_p.content }}</p>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="fourth_section">
+        <div class="container text-center">
+            <h1 class="text-center">Gallery</h1>
+            <hr>
+            <div class="col-sm-10 col-sm-offset-1">
+                <div class="row">
+{#                    <div class="col-sm-4"><img src="{% static 'img/ly0F_dWsjH8.jpg' %}" alt=""#}
+{#                                               class="img-responsive img-thumbnail"></div>#}
+{#                    <div class="col-sm-4"><img src="{% static 'img/ly0F_dWsjH8.jpg' %}" alt=""#}
+{#                                               class="img-responsive img-thumbnail"></div>#}
+{#                    <div class="col-sm-4"><img src="{% static 'img/ly0F_dWsjH8.jpg' %}" alt=""#}
+{#                                               class="img-responsive img-thumbnail"></div>#}
+{#                </div>#}
+{#                <div class="row">#}
+{#                    <div class="col-sm-4"><img src="{% static 'img/ly0F_dWsjH8.jpg' %}" alt=""#}
+{#                                               class="img-responsive img-thumbnail"></div>#}
+{#                    <div class="col-sm-4"><img src="{% static 'img/ly0F_dWsjH8.jpg' %}" alt=""#}
+{#                                               class="img-responsive img-thumbnail"></div>#}
+{#                    <div class="col-sm-4"><img src="{% static 'img/ly0F_dWsjH8.jpg' %}" alt=""#}
+{#                                               class="img-responsive img-thumbnail"></div>#}
+
+                    {% for item in mini_gallery %}
+                        <div class="col-sm-4">
+                            <img src="{% if item.image %}{{ item.image.url }}{% endif %}" alt="" class="img-responsive img-thumbnail">
+                        </div>
+                        {% cycle '' '' '</div><div class="row">' %}
+                    {% endfor %}
+
+                </div>
+                <div class="btn"><a href="{% url 'portfolio:gallery' %}">View gallery</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fifth_section" style="background: url({% static 'img/fifth_section.gif' %});background-size: cover;background-position: center;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h1>Contact me:</h1>
+                </div>
+                <div class="col-sm-4">
+                    <div class="btn btn-inverse"><a href="#">Facebook</a></div>
+                    <div class="btn btn-inverse"><a href="#">VK</a></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 {% endblock %}
 
-
-{% block footer %}
-Footer <br><br><br><br><br><br><br><br><br><br>
+{% block footer_copyright %}
+{{ footer_copy.content }}
 {% endblock %}
-

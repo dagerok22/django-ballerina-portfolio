@@ -63,3 +63,87 @@ p.navbar-text.active{
 .mouse-wheel:hover{
     cursor: pointer;
 }
+
+.fourth_section{
+    padding: 0 0 50px;
+}
+.fourth_section img{
+    width: 300px;
+    height: 300px;
+}
+
+.fourth_section .row{
+    margin: 20px 0 20px;
+}
+
+.fourth_section img{
+    width: 100%;
+    height: auto;
+}
+.fourth_section .btn, .fifth_section .btn-inverse{
+    font-size: 1.4em;
+}
+.btn{
+    margin: 20px auto 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    border-radius: 0;
+    background: transparent;
+    color: #000;
+    border: 1px solid #000;
+    transition: all .2s ease;
+}
+.btn a{
+    color: #000;
+    text-shadow: none;
+}
+.btn:hover a{
+    color: #fff;
+    text-shadow: none;
+}
+.btn:hover{
+    color: #fff;
+    background: #000;
+}
+.btn:active{
+    background: #000;
+}
+
+
+.btn-inverse{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    border-radius: 0;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: all .2s ease;
+}
+.btn-inverse a{
+    color: #fff;
+    text-shadow: none;
+}
+.btn-inverse:hover a{
+    color: #000;
+    text-shadow: none;
+}
+.btn-inverse:hover{
+    color: #000;
+    background: #fff;
+}
+.btn-inverse:active{
+    background: #fff;
+}
+
+.fifth_section{
+    padding: 130px 0 130px;
+}
+.fifth_section h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #fff;
+}
+
+.footer{
+    padding: 30px 0 30px;
+}

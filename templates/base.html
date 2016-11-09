@@ -11,12 +11,18 @@
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed" rel="stylesheet">
+    {% block links %}
+    
+    {% endblock %}
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'base.css' %}">
     <link rel="stylesheet" href="{% static 'home.css' %}">
+    {% block page_css %}
+    
+    {% endblock %}
 
 
 </head>
@@ -39,7 +45,8 @@
 {#                    </li>#}
 {#                </ul>#}
                 <div class="pull-right">
-                    <p class="navbar-text"><a href="">Home</a></p>
+                    <p class="navbar-text"><a href="{% url 'portfolio:home' %}">Home</a></p>
+                    <p class="navbar-text"><a href="{% url 'portfolio:about' %}">About</a></p>
                     <p class="navbar-text"><a href="{% url 'portfolio:gallery' %}">Gallery</a></p>
                     <p class="navbar-text"><a href="{% url 'portfolio:contact' %}">Contact</a></p>
                 </div>
@@ -59,6 +66,7 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="btn"><a href="{% url 'portfolio:home' %}">Home</a></div>
+                    <div class="btn"><a href="{% url 'portfolio:about' %}">About</a></div>
                     <div class="btn"><a href="{% url 'portfolio:gallery' %}">Gallery</a></div>
                     <div class="btn"><a href="{% url 'portfolio:contact' %}">Contact</a></div>
                 </div>

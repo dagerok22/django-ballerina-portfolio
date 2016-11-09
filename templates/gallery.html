@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block head_title %}
+    {{ gallery_title.content }}
+{% endblock %}
+
+{% block links %}
+    <link rel="stylesheet" href="{% static 'libs/Fotorama/fotorama.css' %}">
+    <script src="{% static 'libs/Fotorama/fotorama.js' %}"></script>
+{% endblock %}
+
+{% block page_css %}
+    <link rel="stylesheet" href="{% static 'gallery.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="fotorama style='background: url('{{ fotorama_background.img.url }}')'"
+     data-allowfullscreen="true"
+     data-fit="contain"
+     data-loop="true"
+     data-width="100%"
+     data-maxheight="600px"
+     data-nav="thumbs"
+     data-arrows="false"
+     data-click="true"
+     data-thumbborderwidth="0"
+     data-trackpad="true"
+     data-swipe="true">
+    {% for item in images %}
+        <img src="{{ item.img.url }}" alt="">
+    {% endfor %}
+
+</div>
+
+{% endblock %}
+
+{% block footer_copyright %}
+{{ footer_copy.content }}
+{% endblock %}

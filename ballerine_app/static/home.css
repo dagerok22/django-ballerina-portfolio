@@ -1,13 +1,18 @@
 .first_section_jumbotron{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
     padding: 200px 0 160px 0;
     background: transparent;
     color: #fff
 }
+.first_section_jumbotron>h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
 
 .first_section_jumbotron>p{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
 }
 p.navbar-text{
     font-family: 'Raleway', sans-serif;
@@ -42,14 +47,18 @@ p.navbar-text.active{
 
 .second_section, .third_section{
 
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
+
     color: #333;
     padding: 90px 0 90px;
 }
+.second_section h2, .third_section h2{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
 .second_section p, .third_section p{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #666;
     font-size: 1.3em;
 }
 
@@ -83,64 +92,14 @@ p.navbar-text.active{
 .fourth_section .btn, .fifth_section .btn-inverse{
     font-size: 1.4em;
 }
-.btn{
-    margin: 20px auto 0;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    border-radius: 0;
-    background: transparent;
-    color: #000;
-    border: 1px solid #000;
-    transition: all .2s ease;
-}
-.btn a{
-    color: #000;
-    text-shadow: none;
-}
-.btn:hover a{
-    color: #fff;
-    text-shadow: none;
-}
-.btn:hover{
-    color: #fff;
-    background: #000;
-}
-.btn:active{
-    background: #000;
-}
 
-
-.btn-inverse{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    border-radius: 0;
-    background: transparent;
-    color: #fff;
-    border: 1px solid #fff;
-    transition: all .2s ease;
-}
-.btn-inverse a{
-    color: #fff;
-    text-shadow: none;
-}
-.btn-inverse:hover a{
-    color: #000;
-    text-shadow: none;
-}
-.btn-inverse:hover{
-    color: #000;
-    background: #fff;
-}
-.btn-inverse:active{
-    background: #fff;
-}
 
 .fifth_section{
     padding: 130px 0 130px;
 }
 .fifth_section h1{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
     color: #fff;
 }
 

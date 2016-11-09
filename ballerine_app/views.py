@@ -13,11 +13,12 @@ from django.shortcuts import render
 # Create your views here.
 from django.views.decorators.csrf import csrf_protect
 
-from ballerine_app.models import StaticText, HomeImage, MiniGallery
+from ballerine_app.models import StaticText, HomeImage, MiniGallery, Gallery
 
 
 def home(request):
     # static text
+    home_title = get_object_or_404(StaticText, title="home_title")
     first_section_h1 = get_object_or_404(StaticText, title="first_section_main")
     first_section_p = get_object_or_404(StaticText, title="first_section_sub")
     second_section_p = get_object_or_404(StaticText, title="second_section_content")
@@ -56,5 +57,21 @@ def contact(request):
     return render(request, "home.html", context)
 
 def gallery(request):
+    images = Gallery.objects.all().order_by("-id")
+
+    gallery_title = get_object_or_404(StaticText, title="gallery_title")
+    footer_copy = get_object_or_404(StaticText, title="footer_copyright")
+
+    fotorama_background = get_object_or_404(HomeImage, title="fotorama_background")
+
+    context = {
+        "images": images,
+        "footer_copy": footer_copy,
+        "gallery_title": gallery_title,
+        "fotorama_background": fotorama_background,
+    }
+    return render(request, "gallery.html", context)
+
+def about(request):
     context = []
-    return render(request, "home.html", context)
+    return render(request, "about.html", context)

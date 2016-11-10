@@ -6,15 +6,16 @@
     {{ title }}
 {% endblock %}
 
+{% block links %}
+{% endblock %}
 
 {% block content %}
-    <div class="first_section" style="background: url({{ first_section_bg.img.url }}); background-size: cover;background-position: center;">
+    <div class="first_section" style="background: url({{ first_section_bg.img.url }}); background-size: cover;background-position: center top;">
         <div class="container">
             <div class="col-sm-10 col-sm-offset-1">
                 <div class="jumbotron first_section_jumbotron">
                     <h1>{{ first_section_h1.content }}</h1>
                     <p class="lead">{{ first_section_p.content }}</p>
-                    <p></p>
                 </div>
                 <div class="row"><img src="{% static 'img/mouse-with-wheel.gif' %}" alt="" class="mouse-wheel"></div>
             </div>
@@ -57,24 +58,12 @@
             <hr>
             <div class="col-sm-10 col-sm-offset-1">
                 <div class="row">
-{#                    <div class="col-sm-4"><img src="{% static 'img/ly0F_dWsjH8.jpg' %}" alt=""#}
-{#                                               class="img-responsive img-thumbnail"></div>#}
-{#                    <div class="col-sm-4"><img src="{% static 'img/ly0F_dWsjH8.jpg' %}" alt=""#}
-{#                                               class="img-responsive img-thumbnail"></div>#}
-{#                    <div class="col-sm-4"><img src="{% static 'img/ly0F_dWsjH8.jpg' %}" alt=""#}
-{#                                               class="img-responsive img-thumbnail"></div>#}
-{#                </div>#}
-{#                <div class="row">#}
-{#                    <div class="col-sm-4"><img src="{% static 'img/ly0F_dWsjH8.jpg' %}" alt=""#}
-{#                                               class="img-responsive img-thumbnail"></div>#}
-{#                    <div class="col-sm-4"><img src="{% static 'img/ly0F_dWsjH8.jpg' %}" alt=""#}
-{#                                               class="img-responsive img-thumbnail"></div>#}
-{#                    <div class="col-sm-4"><img src="{% static 'img/ly0F_dWsjH8.jpg' %}" alt=""#}
-{#                                               class="img-responsive img-thumbnail"></div>#}
 
                     {% for item in mini_gallery %}
                         <div class="col-sm-4">
-                            <img src="{% if item.image %}{{ item.image.url }}{% endif %}" alt="" class="img-responsive img-thumbnail">
+                            <a class="popup_image" href="{% url 'portfolio:gallery' %}">
+                               <img src="{% if item.image %}{{ item.image.url }}{% endif %}" alt="" class="img-responsive img-thumbnail">
+                            </a>
                         </div>
                         {% cycle '' '' '</div><div class="row">' %}
                     {% endfor %}
@@ -92,8 +81,8 @@
                     <h1>Contact me:</h1>
                 </div>
                 <div class="col-sm-4">
-                    <div class="btn btn-inverse"><a href="#">Facebook</a></div>
-                    <div class="btn btn-inverse"><a href="#">VK</a></div>
+                    <div class="btn btn-inverse"><a href="{{ social_1_link.content }}">{{ social_1_text.content }}</a></div>
+                    <div class="btn btn-inverse"><a href="{{ social_2_link.content }}">{{ social_2_text.content }}</a></div>
                 </div>
             </div>
         </div>

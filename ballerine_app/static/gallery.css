@@ -1,9 +1,9 @@
 .fotorama {
     margin-top: 68px;
     background: #f1f1f1;
-    -webkit-box-shadow: inset 0px -2px 22px -6px rgba(0, 0, 0, 0.64);
-    -moz-box-shadow: inset 0px -2px 22px -6px rgba(0, 0, 0, 0.64);
-    box-shadow: inset 0px -2px 22px -6px rgba(0, 0, 0, 0.64);
+    -webkit-box-shadow: inset 0px -2px 22px -6px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: inset 0px -2px 22px -6px rgba(0, 0, 0, 0.14);
+    box-shadow: inset 0px -2px 22px -6px rgba(0, 0, 0, 0.14);
 }
 
 .head {

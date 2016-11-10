@@ -25,6 +25,10 @@ def home(request):
     second_section_h2 = get_object_or_404(StaticText, title="second_section_title")
     third_section_p = get_object_or_404(StaticText, title="third_section_content")
     third_section_h2 = get_object_or_404(StaticText, title="third_section_title")
+    social_2_link = get_object_or_404(StaticText, title="social_2_link")
+    social_1_link = get_object_or_404(StaticText, title="social_1_link")
+    social_2_text = get_object_or_404(StaticText, title="social_2_text")
+    social_1_text = get_object_or_404(StaticText, title="social_1_text")
     footer_copy = get_object_or_404(StaticText, title="footer_copyright")
 
     # images
@@ -41,6 +45,10 @@ def home(request):
         "first_section_p": first_section_p,
         "second_section_p": second_section_p,
         "second_section_h2": second_section_h2,
+        "social_2_link": social_2_link,
+        "social_1_link": social_1_link,
+        "social_2_text": social_2_text,
+        "social_1_text": social_1_text,
         "footer_copy": footer_copy,
         "third_section_p": third_section_p,
         "third_section_h2": third_section_h2,

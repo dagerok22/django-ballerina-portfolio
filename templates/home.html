@@ -3,7 +3,7 @@
 
 
 {% block head_title %}
-    {{ title }}
+    {{ home_title.content }}
 {% endblock %}
 
 {% block links %}
@@ -81,8 +81,13 @@
                     <h1>Contact me:</h1>
                 </div>
                 <div class="col-sm-4">
-                    <div class="btn btn-inverse"><a href="{{ social_1_link.content }}">{{ social_1_text.content }}</a></div>
-                    <div class="btn btn-inverse"><a href="{{ social_2_link.content }}">{{ social_2_text.content }}</a></div>
+                    {% for item in socials %}
+                        <div class="btn btn-inverse">
+                            <a href="{% if item.url %}{{ item.url }}{% endif %}">
+                                {{ item.title }}
+                            </a>
+                        </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
@@ -90,7 +95,7 @@
     </div>
 {% endblock %}
 
-{% block script_base %}
+{% block page_css %}
     <script src="{% static 'js/home.js' %}"></script>
 {% endblock %}
 

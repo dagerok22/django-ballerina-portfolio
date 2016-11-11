@@ -1,6 +1,9 @@
 /**
  * Created by GeneralKenobi on 11.11.2016.
  */
+
+var $document = $(document);
+
 $document.scroll(function() {
   scrollTop = $document.scrollTop()
 

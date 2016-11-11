@@ -14,7 +14,7 @@ a:hover{
     width: 100%;
     position: fixed;
     z-index: 10;
-    transition: background-color .3s ease;
+    transition: background-color .3s ease-in-out;
 }
 
 .nav-scrolled{
@@ -75,4 +75,10 @@ a:hover{
 }
 .btn-inverse:active{
     background: #fff;
+}
+
+.footer btn>a{
+    display: block;
+    width: 100%;
+    width: 100%;
 }

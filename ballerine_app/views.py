@@ -13,7 +13,7 @@ from django.shortcuts import render
 # Create your views here.
 from django.views.decorators.csrf import csrf_protect
 
-from ballerine_app.models import StaticText, HomeImage, MiniGallery, Gallery
+from ballerine_app.models import StaticText, HomeImage, MiniGallery, Gallery, Social
 
 
 def home(request):
@@ -36,11 +36,13 @@ def home(request):
     second_section_image = get_object_or_404(HomeImage, title="second_section_image")
     third_section_image = get_object_or_404(HomeImage, title="third_section_image")
 
+    socials = Social.objects.all().order_by("id")
+
     queryset_list = MiniGallery.objects.all().order_by("-id")
-    print(queryset_list[0].image.url)
+    print(socials[0].title)
 
     context = {
-        "title": "Antropova Anastasia",
+        "home_title": home_title,
         "first_section_h1": first_section_h1,
         "first_section_p": first_section_p,
         "second_section_p": second_section_p,
@@ -56,6 +58,7 @@ def home(request):
         "second_section_image": second_section_image,
         "third_section_image": third_section_image,
         "mini_gallery": queryset_list,
+        "socials": socials,
     }
 
     return render(request, "home.html", context)
@@ -83,9 +86,11 @@ def gallery(request):
 def about(request):
     main_img = get_object_or_404(HomeImage, title="about_main_img")
     main_bg = get_object_or_404(HomeImage, title="about_main_bg")
+    about_title = get_object_or_404(StaticText, title="about_title")
 
     context = {
         "main_img": main_img,
         "main_bg": main_bg,
+        "about_title": about_title,
     }
     return render(request, "about.html", context)

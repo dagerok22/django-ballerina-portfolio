@@ -3,24 +3,6 @@
  */
 
 
-$(document).ready(function() {
-  $('.popup_image').magnificPopup(
-      {
-          type: 'image',
-		closeOnContentClick: true,
-		closeBtnInside: false,
-		fixedContentPos: true,
-		image: {
-			verticalFit: true
-		},
-		zoom: {
-			enabled: true,
-			duration: 300 // don't foget to change the duration also in CSS
-		}
-      }
-  );
-});
-
 
 var $document = $(document),
     $element = $('.head'),

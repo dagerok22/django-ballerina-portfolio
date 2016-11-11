@@ -1,5 +1,7 @@
+.face_section .container{
+}
 .face_section img{
-    margin: 200px 0 -50px;
+    margin: 300px 0 -50px;
 }
 img{
     z-index: 10;

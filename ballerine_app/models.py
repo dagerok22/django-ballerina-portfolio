@@ -34,5 +34,13 @@ class Gallery(models.Model):
     img = models.FileField(null=True, blank=True)
 
     def __str__(self):
-        return self.titled
+        return self.title
+
+
+class Social(models.Model):
+    title = models.CharField(max_length=20)
+    url = models.URLField(default=None)
+
+    def __str__(self):
+        return self.title
 

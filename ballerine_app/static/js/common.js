@@ -36,11 +36,6 @@ $document.scroll(function() {
     $element.removeClass(className);
   }
 
-  if(scrollTop < 700){
-    $('.first_section').css({
-      backgroundPosition: 'center ' +  scrollTop*0.2 + 'px'
-    })
-  }
 });
 
 $('.mouse-wheel').click(function () {

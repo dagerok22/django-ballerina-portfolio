@@ -81,5 +81,11 @@ def gallery(request):
     return render(request, "gallery.html", context)
 
 def about(request):
-    context = []
+    main_img = get_object_or_404(HomeImage, title="about_main_img")
+    main_bg = get_object_or_404(HomeImage, title="about_main_bg")
+
+    context = {
+        "main_img": main_img,
+        "main_bg": main_bg,
+    }
     return render(request, "about.html", context)

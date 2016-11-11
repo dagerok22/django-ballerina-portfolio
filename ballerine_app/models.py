@@ -34,5 +34,5 @@ class Gallery(models.Model):
     img = models.FileField(null=True, blank=True)
 
     def __str__(self):
-        return self.title
+        return self.titled
 

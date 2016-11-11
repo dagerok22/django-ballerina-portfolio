@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block page_css %}
+    <link rel="stylesheet" href="{% static 'about.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="face_section" style="background: url({{ main_bg.img.url }}); background-size: contain;background-position: center -100px;">
+        <div class="container">
+            <div class="col-sm-4 col-sm-offset-4">
+                <img src="{{ main_img.img.url }}" alt="" class="img-responsive img-thumbnail">
+            </div>
+        </div>
+
+        <div class="about_text">
+            <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <h2>About</h2>
+                    <hr>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem beatae consequuntur culpa deserunt dolor dolores, earum est expedita, molestiae nobis obcaecati optio quidem sint suscipit voluptatum! Ea exercitationem explicabo ratione. Delectus dolor id illo laboriosam praesentium? Alias animi atque consequatur cum dolorem dolores earum eius error, eum ex fugit harum incidunt ipsam magnam maiores maxime minus neque nostrum officia officiis provident saepe sapiente sunt tempora temporibus totam vero? Doloribus eius nihil sit. Blanditiis commodi, cumque ipsum labore magni maiores minima praesentium quas quisquam quod reprehenderit sapiente sint tempore totam ullam. Aspernatur, atque blanditiis deleniti dolorem doloribus esse excepturi expedita, fugiat harum laboriosam nemo numquam quaerat recusandae repellat repudiandae totam vitae? Adipisci, distinctio expedita! Corporis iusto maxime, minus mollitia nobis suscipit voluptas? Autem commodi consequatur delectus dolores eum ex incidunt, laborum, maiores modi mollitia qui quis recusandae rem tempora totam, unde voluptatem! Corporis cum dicta non odit reiciendis reprehenderit rerum similique soluta. Ab, accusamus alias aliquid aperiam, architecto, asperiores at autem ducimus eaque eius ex facilis fuga hic incidunt maiores natus neque omnis praesentium provident quos repellendus rerum sint tenetur vitae voluptates? Ab culpa explicabo provident tempora. Ad, aliquam aperiam asperiores autem blanditiis dolor ea et fuga id libero magnam, nemo nulla officia quasi, quisquam sed sunt tempora veniam. Aperiam autem cum dignissimos eligendi, fuga fugiat laudantium natus numquam quidem quis quo rerum tenetur velit. Eligendi est laborum nobis possimus veniam? Animi, consequuntur debitis, delectus deserunt dolor dolores ea, exercitationem facilis fugiat nam obcaecati perspiciatis porro possimus quidem quos repudiandae sint suscipit tenetur veritatis voluptas. Architecto corporis, cupiditate eaque enim error esse harum impedit iusto molestiae necessitatibus nihil soluta velit, voluptates? Alias amet consectetur, consequatur eveniet laborum libero sunt vitae! Cumque dignissimos eos incidunt odio tempore, tenetur vel voluptas. Commodi corporis cumque deserunt in minima omnis quo repellendus repudiandae sed temporibus.
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block script_base %}
+    <script src="{% static 'js/about.js' %}"></script>
+{% endblock %}

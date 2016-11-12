@@ -24,6 +24,13 @@
 .socials_block{
     padding: 20px 0 20px;
 }
+.message span{
+    background: #000;
+    padding: 6px 7px 6px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
 
 form{
     margin-top: 20px;

@@ -51,6 +51,11 @@
                 {{ form.message }}
                 <input type="submit" class="btn" value="{{ form_button_palceholder.content }}">
             </form>
+            {% if messages %}
+                    {% for message in messages %}
+                        <h4{% if message.tags %} class="{{ message.tags }} text-center message"{% endif %}><span>{{ message }}</span></h4>
+                    {% endfor %}
+            {% endif %}
 
         </div>
         </div>

@@ -79,15 +79,14 @@ def contact(request):
 
     socials = Social.objects.all().order_by("id")
 
-
     form = MessageForm(request.POST or None)
     if form.is_valid():
         instance = form.save(commit=False)
         instance.user = request.user
         instance.save()
-        messages.success(request, "Successfully created")
-    else:
-        messages.success(request, "Error")
+        messages.success(request, "Successfully sent")
+    elif request.POST:
+        messages.success(request, "Sorry, something went wrong")
 
     context = {
         "contact_title": contact_title,

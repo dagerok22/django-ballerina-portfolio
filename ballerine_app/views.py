@@ -1,3 +1,4 @@
+from django.forms import forms
 from django.http import Http404
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
@@ -11,8 +12,9 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.shortcuts import render
 
 # Create your views here.
-from django.views.decorators.csrf import csrf_protect
+from django.views.decorators.csrf import csrf_protect, csrf_exempt
 
+from ballerine_app.forms import MessageForm
 from ballerine_app.models import StaticText, HomeImage, MiniGallery, Gallery, Social
 
 
@@ -64,20 +66,56 @@ def home(request):
     return render(request, "home.html", context)
 
 def contact(request):
-    context = []
-    return render(request, "home.html", context)
+    contact_title = get_object_or_404(StaticText, title="contact_title")
+    footer_copy = get_object_or_404(StaticText, title="footer_copyright")
+    first_textblock = get_object_or_404(StaticText, title="contact_first_textblock")
+    second_textblock = get_object_or_404(StaticText , title="contact_second_textblock")
+    third_textblock = get_object_or_404(StaticText, title="contact_third_textblock")
+    fourth_textblock = get_object_or_404(StaticText, title="contact_fourth_textblock")
+    form_name_palceholder = get_object_or_404(StaticText, title="contact_form_name_palceholder")
+    form_email_palceholder = get_object_or_404(StaticText, title="contact_form_email_palceholder")
+    form_message_palceholder = get_object_or_404(StaticText, title="contact_form_message_palceholder")
+    form_button_palceholder = get_object_or_404(StaticText, title="contact_form_button_palceholder")
+
+    socials = Social.objects.all().order_by("id")
+
+
+    form = MessageForm(request.POST or None)
+    if form.is_valid():
+        instance = form.save(commit=False)
+        instance.user = request.user
+        instance.save()
+        messages.success(request, "Successfully created")
+    else:
+        messages.success(request, "Error")
+
+    context = {
+        "contact_title": contact_title,
+        "footer_copyright": footer_copy,
+        "socials": socials,
+        "first_textblock": first_textblock,
+        "second_textblock": second_textblock,
+        "third_textblock": third_textblock,
+        "fourth_textblock": fourth_textblock,
+        "form_name_palceholder": form_name_palceholder,
+        "form_email_palceholder": form_email_palceholder,
+        "form_message_palceholder": form_message_palceholder,
+        "form_button_palceholder": form_button_palceholder,
+        "form": form,
+    }
+    return render(request, "contact.html", context)
 
 def gallery(request):
     images = Gallery.objects.all().order_by("-id")
 
     gallery_title = get_object_or_404(StaticText, title="gallery_title")
-    footer_copy = get_object_or_404(StaticText, title="footer_copyright")
+    footer_copyright = get_object_or_404(StaticText, title="footer_copyright")
 
     fotorama_background = get_object_or_404(HomeImage, title="fotorama_background")
 
     context = {
         "images": images,
-        "footer_copy": footer_copy,
+        "footer_copy": footer_copyright,
         "gallery_title": gallery_title,
         "fotorama_background": fotorama_background,
     }
@@ -87,10 +125,12 @@ def about(request):
     main_img = get_object_or_404(HomeImage, title="about_main_img")
     main_bg = get_object_or_404(HomeImage, title="about_main_bg")
     about_title = get_object_or_404(StaticText, title="about_title")
+    footer_copyright = get_object_or_404(StaticText, title="footer_copyright")
 
     context = {
         "main_img": main_img,
         "main_bg": main_bg,
         "about_title": about_title,
+        "footer_copyright": footer_copyright
     }
     return render(request, "about.html", context)

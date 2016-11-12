@@ -44,3 +44,13 @@ class Social(models.Model):
     def __str__(self):
         return self.title
 
+
+class Message(models.Model):
+    name = models.CharField(max_length=50)
+    email = models.EmailField(default=None)
+    message = models.TextField(max_length=300)
+    timestamp = models.DateTimeField(auto_now=False, auto_now_add=True)
+
+    def __str__(self):
+        return self.name
+

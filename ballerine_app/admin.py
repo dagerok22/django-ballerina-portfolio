@@ -1,5 +1,5 @@
 from django.contrib import admin
-from ballerine_app.models import StaticText, HomeImage, MiniGallery, Gallery, Social
+from ballerine_app.models import StaticText, HomeImage, MiniGallery, Gallery, Social, Message
 
 
 # Register your models here.
@@ -54,8 +54,20 @@ class SocialModelAdmin(admin.ModelAdmin):
         model = Social
 
 
+class MesageModelAdmin(admin.ModelAdmin):
+    list_display = ["name", "email", "timestamp"]
+    list_display_links = ["name"]
+    list_filter = ["email", "timestamp"]
+
+    search_fields = ["name", "email"]
+
+    class Meta:
+        model = Message
+
+
 admin.site.register(StaticText, StaticTextModelAdmin)
 admin.site.register(HomeImage, HomeImageModelAdmin)
 admin.site.register(MiniGallery, MiniGalleryModelAdmin)
 admin.site.register(Gallery, GalleryModelAdmin)
 admin.site.register(Social, SocialModelAdmin)
+admin.site.register(Message, MesageModelAdmin)

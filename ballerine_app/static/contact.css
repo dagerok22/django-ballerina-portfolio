@@ -1,0 +1,63 @@
+.main_thumbnail h3, .main_thumbnail h4{
+}
+.main_thumbnail{
+    color: #000000;
+    padding: 200px 0 0;
+}
+
+.head{
+    background: rgba(0,0,0,.9);
+}
+.head a{
+}
+.main_thumbnail h1{
+    font-family: 'Lato', sans-serif;
+}
+.main_thumbnail h4{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn.social{
+    margin: 0;
+    font-size: 1.3em;
+}
+.socials_block{
+    padding: 20px 0 20px;
+}
+
+form{
+    margin-top: 20px;
+}
+form input, form textarea{
+    margin: 0;
+    border: 1px solid #000000;
+    padding: 7px 7px 5px !important;
+}
+
+form input:focus{
+    box-shadow: none;
+    border-color: #000000;
+    outline: 0;
+}
+form textarea:focus{
+    box-shadow: none;
+    border-color: #000000;
+    outline: 0;
+}
+form input[type="text"]{
+}
+
+form input::-webkit-input-placeholder {color:#000;}
+form input::-moz-placeholder {color:#000;}
+form input::-moz-placeholder {color:#000;}
+form input::-ms-input-placeholder {color:#000;}
+
+form textarea::-webkit-input-placeholder {color:#000;}
+form textarea::-moz-placeholder {color:#000;}
+form textarea::-moz-placeholder {color:#000;}
+form textarea::-ms-input-placeholder {color:#000;}
+
+#id_message {
+    min-height: 200px;
+    margin-top: 20px;
+}

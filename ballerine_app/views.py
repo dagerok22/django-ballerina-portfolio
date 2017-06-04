@@ -1,19 +1,6 @@
-from django.forms import forms
-from django.http import Http404
-from django.http import HttpResponse
-from django.http import HttpResponseRedirect
-from django.shortcuts import render, get_object_or_404,redirect
+from django.shortcuts import get_object_or_404
 from django.contrib import messages
-
-from urllib.parse import quote_plus
-
-
-from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.shortcuts import render
-
-# Create your views here.
-from django.views.decorators.csrf import csrf_protect, csrf_exempt
-
 from ballerine_app.forms import MessageForm
 from ballerine_app.models import StaticText, HomeImage, MiniGallery, Gallery, Social
 
@@ -41,7 +28,6 @@ def home(request):
     socials = Social.objects.all().order_by("id")
 
     queryset_list = MiniGallery.objects.all().order_by("-id")
-    print(socials[0].title)
 
     context = {
         "home_title": home_title,
@@ -64,6 +50,7 @@ def home(request):
     }
 
     return render(request, "home.html", context)
+
 
 def contact(request):
     contact_title = get_object_or_404(StaticText, title="contact_title")
@@ -104,6 +91,7 @@ def contact(request):
     }
     return render(request, "contact.html", context)
 
+
 def gallery(request):
     images = Gallery.objects.all().order_by("-id")
 
@@ -133,3 +121,4 @@ def about(request):
         "footer_copyright": footer_copyright
     }
     return render(request, "about.html", context)
+

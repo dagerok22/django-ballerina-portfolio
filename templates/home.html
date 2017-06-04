@@ -25,12 +25,12 @@
     <div class="second_section">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-6 col-xs-12">
                     <h2>{{ second_section_h2.content }}</h2>
                     <hr>
                     <p>{{ second_section_p.content }}</p>
                 </div>
-                <div class="col-sm-6 second_section_img">
+                <div class="col-sm-6 col-xs-12 second_section_img">
                     <img src="{{ second_section_image.img.url }}" alt="" class="img-responsive img-thumbnail">
                 </div>
             </div>
@@ -40,10 +40,10 @@
     <div class="third_section">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 second_section_img">
+                <div class="col-sm-6 col-xs-12 second_section_img">
                     <img src="{{ third_section_image.img.url }}" alt="" class="img-responsive img-thumbnail">
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 col-xs-12">
                     <h2>{{ third_section_h2.content }}</h2>
                     <hr>
                     <p>{{ third_section_p.content }}</p>
@@ -60,7 +60,7 @@
                 <div class="row">
 
                     {% for item in mini_gallery %}
-                        <div class="col-sm-4">
+                        <div class="col-sm-4 col-xs-6">
                             <a class="popup_image" href="{% url 'portfolio:gallery' %}">
                                <img src="{% if item.image %}{{ item.image.url }}{% endif %}" alt="" class="img-responsive img-thumbnail">
                             </a>

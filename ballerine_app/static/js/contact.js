@@ -7,5 +7,4 @@ $(document).ready(function () {
     $("#id_email").val("")
     $("#id_name").val("")
 
-
 })

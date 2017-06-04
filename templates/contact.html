@@ -11,8 +11,8 @@
 
 {% block content %}
     <div class="container main_thumbnail">
-        <div class="row">
             <div class="col-sm-8 col-sm-offset-2 text-center">
+            <div class="row">
                 <h1>{{ first_textblock.content }}</h1>
                 <hr>
                 <h4>{{ second_textblock.content }}</h4>
@@ -29,10 +29,11 @@
                             </a>
                         </div>
                 {% endfor %}
-                </div>
+                </div></div>
                 <hr>
             </div>
         <div class="col-sm-6 col-sm-offset-3">
+        <div class="row">
             <h5 class="text-center">If you have offers or suggestions, don't be afraid to drop me a message</h5>
 {#            <form action="">#}
 {#                <input type="text" placeholder="{{ form_name_palceholder.content }}" class="col-sm-5">#}
@@ -40,16 +41,20 @@
 {#                <textarea placeholder="{{ form_message_palceholder.content }}" class="col-sm-12 message_field"></textarea>#}
 {#                <input type="submit" class="btn" value="{{ form_button_palceholder.content }}">#}
 {#            </form>#}
-
+        </div>
             <form action="" method="post">{% csrf_token %}
             {{ form.non_field_errors }}
-                {{ form.name.errors }}
+                <div class="row">{{ form.name.errors }}
                 {{ form.name }}
                 {{ form.email.errors }}
-                {{ form.email }}
+                {{ form.email }}</div>
+                <div class="row">
                 {{ form.message.errors }}
-                {{ form.message }}
-                <input type="submit" class="btn" value="{{ form_button_palceholder.content }}">
+                {{ form.message }}</div>
+                <div class="row">
+                    <input type="submit" class="btn" value="{{ form_button_palceholder.content }}">
+                </div>
+
             </form>
             {% if messages %}
                     {% for message in messages %}
@@ -57,7 +62,6 @@
                     {% endfor %}
             {% endif %}
 
-        </div>
         </div>
     </div>
 {% endblock %}

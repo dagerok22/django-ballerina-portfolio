@@ -16,13 +16,22 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from django.conf.urls.static import static
+from django.contrib.staticfiles.storage import staticfiles_storage
+from django.views.generic import RedirectView
 
 from DancerPortfolio import settings
+from ballerine_app.views import *
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^portfolio/', include("ballerine_app.urls", namespace="portfolio")),
-
+    url(r'^', include("ballerine_app.urls", namespace="portfolio")),
+    url(
+        r'^favicon.ico$',
+        RedirectView.as_view(
+            url=staticfiles_storage.url('img/favicon.png'),
+            permanent=False),
+        name="favicon"
+    ),
 ]
 
 if settings.DEBUG:

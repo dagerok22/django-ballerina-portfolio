@@ -2,140 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="334a389a-8794-4499-955a-db8282ee54ec" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/media_cdn/110689_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/media_cdn/110689_1_bXVwIRT.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/media_cdn/4z6_X5CBWsE.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/media_cdn/4z6_X5CBWsE_8OvK42G.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/media_cdn/G9_oQks2T5M.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/media_cdn/IMG_0062.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/media_cdn/IMG_0062_2UwCuCe.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/media_cdn/IMG_0062_AJkykhq.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/media_cdn/IMG_0128_prefinal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/media_cdn/IMG_0128_prefinal_E3FnWAv.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/media_cdn/IMG_0128_prefinal_OmMn285.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/media_cdn/_zvr1FmbD_E.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/media_cdn/france_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/media_cdn/thumb-1920-156719.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/media_cdn/vuz-russia-43_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/fonts/Roboto-Bold-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/fonts/Roboto-Light-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/fonts/Roboto-Regular-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/img/86a4hEr4NWc.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/img/AVENTURE DE TROIS ETUDIANTS.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/img/B5-6uTUQCIs.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/img/ClFz0v26_SE.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/img/LjE1-RLMW0w.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/img/MTIc3NjRI2M.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/img/Untitled-1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/img/Untitled-2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/img/Vk3Ze6Ts48A.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/img/cG-Msx9mu5o.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/img/favicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/img/fff.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/img/fifth_section.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/img/first_section.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/img/ly0F_dWsjH8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/img/mouse-with-wheel.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/img/mouse-with-wheel.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/img/second_section.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/img/v_nB2eLGnKU.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/libs/Fotorama/fotorama.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static/comment.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static/js/comment.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/about.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/css/base.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/css/changelists.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/css/dashboard.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/css/fonts.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/css/forms.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/css/login.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/css/rtl.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/css/widgets.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/fonts/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/fonts/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/img/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/img/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/img/calendar-icons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/img/gis/move_vertex_off.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/img/gis/move_vertex_on.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/img/icon-addlink.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/img/icon-alert.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/img/icon-calendar.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/img/icon-changelink.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/img/icon-clock.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/img/icon-deletelink.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/img/icon-no.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/img/icon-unknown-alt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/img/icon-unknown.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/img/icon-yes.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/img/inline-delete.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/img/search.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/img/selector-icons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/img/sorting-icons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/img/tooltag-add.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/img/tooltag-arrowright.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/js/SelectBox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/js/SelectFilter2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/js/actions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/js/actions.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/js/admin/DateTimeShortcuts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/js/admin/RelatedObjectLookups.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/js/calendar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/js/cancel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/js/change_form.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/js/collapse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/js/collapse.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/js/core.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/js/inlines.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/js/inlines.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/js/jquery.init.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/js/popup_response.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/js/prepopulate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/js/prepopulate.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/js/prepopulate_init.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/js/timeparse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/js/urlify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/js/vendor/jquery/LICENSE-JQUERY.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/js/vendor/jquery/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/js/vendor/jquery/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/js/vendor/xregexp/LICENSE-XREGEXP.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/js/vendor/xregexp/xregexp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/admin/js/vendor/xregexp/xregexp.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/base.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/comment.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/contact.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/gallery.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/home.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/js/about.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/js/comment.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/js/common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/js/contact.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/js/experemental.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/js/home.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/libs/Fotorama/fotorama.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/libs/Fotorama/fotorama.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/libs/ParallaxJs/parallax.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/libs/ParallaxJs/parallax.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/libs/PopUp/jquery.magnific-popup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/libs/PopUp/jquery.magnific-popup.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ballerine_app/static_cdn/libs/PopUp/magnific-popup.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/comment.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ballerine_app/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ballerine_app/migrations/0002_homeimages.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ballerine_app/migrations/0003_auto_20161108_1932.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ballerine_app/migrations/0004_gallery_minigallery.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ballerine_app/migrations/0005_auto_20161108_2348.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ballerine_app/migrations/0006_social.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ballerine_app/migrations/0007_auto_20161111_2132.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ballerine_app/migrations/0008_message.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ballerine_app/migrations/__init__.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/DancerPortfolio.iml" afterPath="$PROJECT_DIR$/.idea/DancerPortfolio.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DancerPortfolio/settings.py" afterPath="$PROJECT_DIR$/DancerPortfolio/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ballerine_app/urls.py" afterPath="$PROJECT_DIR$/ballerine_app/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ballerine_app/views.py" afterPath="$PROJECT_DIR$/ballerine_app/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
     </list>
     <ignored path="DancerPortfolio.iws" />
@@ -179,7 +46,7 @@
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="47" column="45" lean-forward="true" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
+              <caret line="68" column="33" lean-forward="true" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -700,10 +567,19 @@
       <option name="presentableId" value="Default" />
       <updated>1478505597181</updated>
     </task>
+    <task id="LOCAL-00001" summary="Comments added">
+      <created>1507121376148</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1507121376148</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32730263" sideWeight="0.5590015" order="7" side_tool="true" content_ui="tabs" />
@@ -711,7 +587,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.4969743" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32730263" sideWeight="0.4409985" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.4969743" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2965204" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2965204" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="manage.py@DancerPortfolio" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34046054" sideWeight="0.48789713" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -740,6 +616,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Comments added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Comments added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1043,7 +923,7 @@
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="47" column="45" lean-forward="true" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
+          <caret line="68" column="33" lean-forward="true" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
           <folding />
         </state>
       </provider>

@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block head_title %}
+    {{ head_title }}
+{% endblock %}
+
+
+{% block page_css %}
+    <link rel="stylesheet" href="{% static 'contact.css' %}">
+    <link rel="stylesheet" href="{% static 'comment.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="container main_thumbnail">
+        <div class="col-sm-6 col-sm-offset-3">
+            {% if comments %}
+                {% for comment in comments %}
+                    <div class="row">
+                        <p class="name">{{ comment.name }}</p>
+                        <p class="message">{{ comment.message }}</p>
+                        <small class="emailTime">{{ comment.email }} {{ comment.timestamp }}</small>
+                    </div>
+                {% endfor %}
+
+            {% endif %}
+            <form action="" method="post">{% csrf_token %}
+                {{ form.non_field_errors }}
+                <div class="row">{{ form.name.errors }}
+                    {{ form.name }}
+                    {{ form.email.errors }}
+                    {{ form.email }}</div>
+                <div class="row">
+                    {{ form.message.errors }}
+                    {{ form.message }}</div>
+                <div class="row">
+                    <input type="submit" class="btn" value="{{ form_button_palceholder.content }}">
+                </div>
+
+            </form>
+            {% if comments %}
+                {% for comment in messages %}
+                    <h4{% if message.tags %} class="{{ message.tags }} text-center message"{% endif %}>
+                        <span>{{ message }}</span></h4>
+                {% endfor %}
+            {% endif %}
+
+        </div>
+    </div>
+{% endblock %}
+
+{% block script_base %}
+    <script src="{% static 'js/comment.js' %}"></script>
+{% endblock %}
+
+{% block footer_copyright %}
+    {{ footer_copyright.content }}
+{% endblock %}

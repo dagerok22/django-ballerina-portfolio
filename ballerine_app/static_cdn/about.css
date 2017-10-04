@@ -1,0 +1,19 @@
+.face_section .container{
+}
+.face_section img{
+    margin: 300px 0 -50px;
+}
+img{
+    z-index: 10;
+}
+.about_text{
+    background: #fff;
+    padding-top: 50px;
+    font-size: 1.2em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700 ;
+}
+.about_text p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}

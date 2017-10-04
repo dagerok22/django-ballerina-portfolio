@@ -1,0 +1,15 @@
+.name {
+    font-family: "Roboto", serif;
+}
+
+.message {
+    font-family: "Raleway", serif;
+    font-size: 1.2em;
+}
+
+.emailTime {
+    display: block;
+    text-align: end;
+    font-size: 0.8em;
+    font-family: "Raleway", serif;
+}

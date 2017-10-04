@@ -1,0 +1,153 @@
+.first_section_jumbotron{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    padding: 200px 0 160px 0;
+    background: transparent;
+    color: #fff
+}
+.first_section_jumbotron>h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.first_section_jumbotron>p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+p.navbar-text{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1.3em;
+    color: #fff;
+    margin: 20px 30px 20px 30px;
+    border-bottom: 3px solid transparent;
+    transition: all .2s ease
+}
+
+p.navbar-text:hover{
+    border-bottom: 3px solid #fff;
+    background: transparent;
+    cursor: pointer;
+}
+p.navbar-text.active{
+    border-bottom: 3px solid #fff;
+}
+
+.third_section{
+    background: #f8f8f8;
+    border-bottom: 2px solid #e1e1e1;
+    border-top: 2px solid #e1e1e1;
+}
+
+/*.second_section{*/
+    /*-webkit-box-shadow: inset 0px 0px 24px -9px rgba(0,0,0,1);*/
+/*-moz-box-shadow: inset 0px 0px 24px -9px rgba(0,0,0,1);*/
+/*box-shadow: inset 0px 0px 24px -9px rgba(0,0,0,1);*/
+/*}*/
+
+.second_section, .third_section{
+
+
+    color: #333;
+    padding: 90px 0 90px;
+}
+.second_section h2, .third_section h2{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+.second_section p, .third_section p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #666;
+    font-size: 1.3em;
+}
+
+.mouse-wheel{
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 30px;
+    display: block;
+}
+
+.mouse-wheel:hover{
+    cursor: pointer;
+}
+
+.fourth_section{
+    padding: 0 0 50px;
+}
+.fourth_section img{
+    width: 300px;
+    height: 300px;
+}
+
+.fourth_section .row{
+    margin: 20px 0 20px;
+}
+
+.fourth_section img{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.fourth_section .btn, .fifth_section .btn-inverse{
+    font-size: 1.4em;
+}
+
+.popup_image{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.fifth_section{
+    padding: 130px 0 130px;
+}
+.fifth_section h1{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+.footer{
+    padding: 30px 0 30px;
+}
+
+.mfp-no-margins img.mfp-img {
+	padding: 0;
+}
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
+	top: 0;
+	bottom: 0;
+}
+/* padding for main container */
+.mfp-no-margins .mfp-container {
+	padding: 0;
+}
+
+
+
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+		opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+		opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+	opacity: 0;
+}

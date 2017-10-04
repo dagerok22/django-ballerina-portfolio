@@ -2,7 +2,7 @@ from django.shortcuts import get_object_or_404
 from django.contrib import messages
 from django.shortcuts import render
 from ballerine_app.forms import MessageForm
-from ballerine_app.models import StaticText, HomeImage, MiniGallery, Gallery, Social
+from ballerine_app.models import StaticText, HomeImage, MiniGallery, Gallery, Social, Message
 
 
 def home(request):
@@ -56,7 +56,7 @@ def contact(request):
     contact_title = get_object_or_404(StaticText, title="contact_title")
     footer_copy = get_object_or_404(StaticText, title="footer_copyright")
     first_textblock = get_object_or_404(StaticText, title="contact_first_textblock")
-    second_textblock = get_object_or_404(StaticText , title="contact_second_textblock")
+    second_textblock = get_object_or_404(StaticText, title="contact_second_textblock")
     third_textblock = get_object_or_404(StaticText, title="contact_third_textblock")
     fourth_textblock = get_object_or_404(StaticText, title="contact_fourth_textblock")
     form_name_palceholder = get_object_or_404(StaticText, title="contact_form_name_palceholder")
@@ -108,6 +108,7 @@ def gallery(request):
     }
     return render(request, "gallery.html", context)
 
+
 def about(request):
     main_img = get_object_or_404(HomeImage, title="about_main_img")
     main_bg = get_object_or_404(HomeImage, title="about_main_bg")
@@ -122,3 +123,24 @@ def about(request):
     }
     return render(request, "about.html", context)
 
+
+def comment(request):
+    comments = Message.objects.all().order_by("timestamp")
+    form_button_palceholder = get_object_or_404(StaticText, title="comment_form_button_palceholder")
+
+    form = MessageForm(request.POST or None)
+    if form.is_valid():
+        instance = form.save(commit=False)
+        instance.user = request.user
+        instance.save()
+        messages.success(request, "Successfully sent")
+    elif request.POST:
+        messages.success(request, "Sorry, something went wrong")
+
+    context = {
+        "head_title": "Comments",
+        "form": form,
+        "comments": comments,
+        "form_button_palceholder": form_button_palceholder
+    }
+    return render(request, "comment.html", context)
